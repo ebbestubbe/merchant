@@ -1,0 +1,28 @@
+{
+    "materials": {
+        "iron_ore": {
+            "tier": 1,
+            "sell_price": 3,
+            "sell_time": 8
+        },
+        "spider_leg": {
+            "tier": 1,
+            "sell_price": 8,
+            "sell_time": 20
+        }
+    },
+    "consumables": {
+        "lesser_potion": {
+            "tier": 1,
+            "sell_price": 23,
+            "sell_time": 25,
+            "requires": {
+                "tuvale_moss": 2,
+                "ashe_root": 2
+            },
+            "craft_cost": 15,
+            "craft_time": 22,
+            "exp": 32
+        }
+    }
+}
