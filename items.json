@@ -1,5 +1,5 @@
 {
-    "materials": {
+    "material": {
         "iron_ore": {
             "tier": 1,
             "sell_price": 3,
@@ -9,9 +9,60 @@
             "tier": 1,
             "sell_price": 8,
             "sell_time": 20
+        },
+        "darksteel_ore":{
+            "tier": 4,
+            "sell_price": 14,
+            "sell_time": 20
+        },
+        "darksteel_chunk":{
+            "tier": 4,
+            "sell_price": 14,
+            "sell_time": 20
+        },
+        "scorpion_shell":{
+            "tier": 4,
+            "sell_price": 15,
+            "sell_time": 25
+        },
+        "tuvale_moss":{
+            "tier": 1,
+            "sell_price": 3,
+            "sell_time": 8
+        },
+        "ashe_root":{
+            "tier": 1,
+            "sell_price": 3,
+            "sell_time": 8
+        },
+        "forest_crystel":{
+            "tier": 1,
+            "sell_price": 40
         }
     },
-    "consumables": {
+    "crafting": {
+        "darksteel_ingot":{
+            "tier": 4,
+            "sell_price": 88,
+            "sell_time": 35,
+            "requires":{
+                "darksteel_ore": 2
+            },
+            "craft_cost": 40,
+            "craft_time": 60
+        },
+        "darksteel_sheet":{
+            "tier": 4,
+            "sell_price": 88,
+            "sell_time": 35,
+            "requires":{
+                "darksteel_chunk": 2
+            },
+            "craft_cost": 40,
+            "craft_time": 60
+        }
+    },
+    "consumable": {
         "lesser_potion": {
             "tier": 1,
             "sell_price": 23,
@@ -23,6 +74,66 @@
             "craft_cost": 15,
             "craft_time": 22,
             "exp": 32
+        },
+        "xp_boost":{
+            "tier": 1,
+            "sell_price": 23,
+            "sell_time": 25,
+            "requires": {
+                "lesser_potion": 1,
+                "forest_crystel": 2,
+                "ashe_root": 4
+            },
+            "craft_cost": 80,
+            "craft_time": 60,
+            "exp": 32
         }
+
+    },
+    "weapon":{
+        "iron_dagger":{
+            "tier": 1,
+            "sell_price": 0,
+            "sell_time": 0,
+            "requires":{
+                "iron_ingot": 2
+            }
+        },
+        "iron_sword":{
+            "tier": 1,
+            "sell_price": 0,
+            "sell_time": 0,
+            "requires":{
+                "iron_ore": 1,
+                "iron_ingot": 1
+            }
+        }
+    },
+    "armor":{
+        "darksteel_platemail":{
+            "tier": 4,
+            "sell_price": 0,
+            "sell_time": 0,
+            "requires":{
+                "darksteel_sheet": 4,
+                "darksteel_chunk": 1
+            },
+            "craft_cost": 250,
+            "craft_time": 0
+        },
+        "scorpion_platemail":{
+            "tier": 4,
+            "sell_price": 0,
+            "sell_time": 0,
+            "requires":{
+                "darksteel_platemail": 1,
+                "darksteel_chunk": 2,
+                "scorpion_shell": 5
+            },
+            "craft_cost": 300,
+            "craft_time": 600
+        }
+
     }
+
 }
