@@ -41,6 +41,16 @@
         }
     },
     "crafting": {
+        "iron_ingot":{
+            "tier": 1,
+            "sell_price": 14,
+            "sell_time": 35,
+            "requires":{
+                "iron_ore": 2
+            },
+            "craft_cost": 5,
+            "craft_time": 60
+        },
         "darksteel_ingot":{
             "tier": 4,
             "sell_price": 88,
@@ -112,7 +122,7 @@
     "armor":{
         "darksteel_platemail":{
             "tier": 4,
-            "sell_price": 0,
+            "sell_price": 670,
             "sell_time": 0,
             "requires":{
                 "darksteel_sheet": 4,
@@ -123,7 +133,7 @@
         },
         "scorpion_platemail":{
             "tier": 4,
-            "sell_price": 0,
+            "sell_price": 1350,
             "sell_time": 0,
             "requires":{
                 "darksteel_platemail": 1,
@@ -132,7 +142,18 @@
             },
             "craft_cost": 300,
             "craft_time": 600
+        },
+        "darksteel_greaves":{
+            "tier": 4,
+            "sell_price": 320,
+            "sell_time": 0,
+            "requires":{
+                "darksteel_sheet": 2
+            },
+            "craft_cost": 125,
+            "craft_time": 600
         }
+
 
     }
 
